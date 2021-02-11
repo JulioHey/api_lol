@@ -1,4 +1,4 @@
-import axios, { AxiosStatic } from 'axios';
+import { AxiosStatic } from 'axios';
 
 
 export class getSummoner {
@@ -6,25 +6,45 @@ export class getSummoner {
     url: string;
     apiKey: string;
 
-    constructor(apiKey: string) {
+    constructor(apiKey: string, axios: AxiosStatic) {
         this.api = axios;
         this.apiKey = apiKey;
 
         this.url = "";
     }
 
-    async getInfo(summoner: string, server?: string) {
-        this.url = this.createUrl(this.apiKey, summoner, server);
+    async getInfoByName(summoner: string, server?: string) {
+        const finalURL = `/summoner/v4/summoners/by-name/${summoner}?api_key=${this.apiKey}`        
+
+        this.url = this.createUrl( finalURL, server);
 
         const response = await this.api.get(this.url);
-        console.log(response.data);
 
         return response.data;
     }
 
-    createUrl(apiKey: string, summonerName: string, server?: string){
-        const url = `https://${server ? server : "br1"}.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${apiKey}`
+    createUrl( finalURL: string, server?: string){
+        const baseURL = `https://${server ? server : "br1"}.api.riotgames.com/lol`
+
+        const url = baseURL.concat(finalURL);
         return url;
     }
 
+    async getStatusByID(summonerId: string, server?: string) {
+        const finalURL = `/league/v4/entries/by-summoner/${summonerId}?api_key=${this.apiKey}`        
+
+        this.url = this.createUrl(finalURL, server);
+
+        const response = await this.api.get(this.url);
+
+        return response.data;
+    }
+
+    async getStatus(summoner: string, server?: string) {
+        const {id} = await this.getInfoByName(summoner, server);
+
+        const data = await this.getStatusByID(id, server);
+
+        return data;
+    }
 }

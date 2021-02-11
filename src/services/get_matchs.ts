@@ -1,4 +1,4 @@
-import axios, { AxiosStatic } from 'axios';
+import { AxiosStatic } from 'axios';
 
 
 export class getMatchs {
@@ -6,7 +6,7 @@ export class getMatchs {
     url: string;
     apiKey: string;
 
-    constructor(apiKey: string) {
+    constructor(apiKey: string, axios: AxiosStatic) {
         this.api = axios;
         this.apiKey = apiKey;
 

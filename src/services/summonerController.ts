@@ -3,35 +3,38 @@ import {
     Response
 } from 'express';
 
+import { AxiosStatic } from 'axios';
+
 import {
     getSummoner
 } from './get_user_name';
 
-import {
-    getStatus
-} from '../services/get_user_stats';
 
 import {
     getMatchs
 } from './get_matchs';
 
+import {
+    SteamAPI
+} from './steam';
+
 
 export class SummonerController {
     getSummoner: getSummoner;
-    getStatus: getStatus;
     getMatchs: getMatchs;
+    SteamAPI: SteamAPI;
 
-    constructor(apiKey: string) {
-        this.getSummoner = new getSummoner(apiKey);
-        this.getStatus = new getStatus(apiKey);
-        this.getMatchs = new getMatchs(apiKey);
+    constructor(apiKey: string, axios: AxiosStatic, steamAPIKEY: string) {
+        this.getSummoner = new getSummoner(apiKey, axios);
+        this.getMatchs = new getMatchs(apiKey, axios);
+        this.SteamAPI = new SteamAPI(steamAPIKEY, axios);
     }
 
     info = async (request: Request, response: Response) => {
         try {
             const { name } = request.body;
 
-            const userInfo = await this.getSummoner.getInfo(name);
+            const userInfo = await this.getSummoner.getInfoByName(name);
             return response.send(userInfo);
         } catch (error) {
             console.log(error);
@@ -41,9 +44,9 @@ export class SummonerController {
 
     status = async (request: Request, response: Response) => {
         try {
-            const { summonerId } = request.body;
+            const { name } = request.body;
 
-            const userInfo = await this.getStatus.getInfo(summonerId);
+            const userInfo = await this.getSummoner.getStatus(name);
             return response.send(userInfo);
         } catch (error) {
             console.log(error);
@@ -56,6 +59,18 @@ export class SummonerController {
             const { accountId } = request.body;
 
             const userInfo = await this.getMatchs.getInfo(accountId);
+            return response.send(userInfo);
+        } catch (error) {
+            console.log(error);
+            return response.json(error);
+        }
+    }
+
+    getStatics = async (request: Request, response: Response) => {
+        try {
+            const { userName } = request.body;
+
+            const userInfo = await this.SteamAPI.getStatics(userName);
             return response.send(userInfo);
         } catch (error) {
             console.log(error);
