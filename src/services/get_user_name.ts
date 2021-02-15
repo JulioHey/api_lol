@@ -1,4 +1,5 @@
 import { AxiosStatic } from 'axios';
+import { response } from 'express';
 
 
 export class getSummoner {
@@ -14,13 +15,25 @@ export class getSummoner {
     }
 
     async getInfoByName(summoner: string, server?: string) {
-        const finalURL = `/summoner/v4/summoners/by-name/${summoner}?api_key=${this.apiKey}`        
+        const encodedSummoner = this.encodeSummonerName(summoner);
+
+        const finalURL = `/summoner/v4/summoners/by-name/${encodedSummoner}?api_key=${this.apiKey}`        
 
         this.url = this.createUrl( finalURL, server);
 
         const response = await this.api.get(this.url);
 
         return response.data;
+    }
+
+    encodeSummonerName(summoner: string) {
+        const ç = /ç/ig;
+        const space = / /ig;
+
+        const newSummoner1 = summoner.replace(ç, "%C3%A7");
+        const newSummoner2 = newSummoner1.replace(space, "%20");
+
+        return newSummoner2;
     }
 
     createUrl( finalURL: string, server?: string){
@@ -37,7 +50,7 @@ export class getSummoner {
 
         const response = await this.api.get(this.url);
 
-        return response.data;
+        return response.data[0];
     }
 
     async getStatus(summoner: string, server?: string) {
@@ -45,6 +58,65 @@ export class getSummoner {
 
         const data = await this.getStatusByID(id, server);
 
-        return data;
+        const playerData = this.handlePlayerData(data);
+
+        return playerData;
+    }
+
+    handlePlayerData(data: any) {
+        const tier = this.translateTier(data.tier);
+        const {
+            rank,
+            leaguePoints,
+            wins,
+            losses,
+            summonerName
+        } = data;
+
+        const matches = wins + losses;
+        const winRatio = wins / matches;
+
+        return {
+            tier,
+            rank,
+            leaguePoints,
+            wins,
+            summonerName,
+            losses,
+            matches,
+            winRatio
+        };
+    }
+
+    translateTier(tier: string) {
+        switch (tier) {
+            case "IRON": {
+                return "Ferro";
+            }
+            case "BRONZE": {
+                return "Bronze";
+            }
+            case "SILVER": { 
+                return "Prata";
+            }
+            case "GOLD": {
+                return "Ouro";
+            }
+            case "PLATINUM": {
+                return "Platina";
+            }
+            case "DIAMOND": {
+                return "Diamante";
+            }
+            case "MASTER": {
+                return "Mestre";
+            }
+            case "GRANDMASTER": {
+                return "Grão-Mestre";
+            }
+            case "CHALLANGER": {
+                return "Desafiante";
+            }
+        }
     }
 }

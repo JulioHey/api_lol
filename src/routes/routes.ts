@@ -14,7 +14,6 @@ const getSummonerController = new SummonerController("RGAPI-ac558bfb-3024-4fae-8
 
 router.get("/summoner", getSummonerController.info)
 router.get("/status", getSummonerController.status)
-router.get("/matchs", getSummonerController.matchs)
 router.get("/steamId", getSummonerController.getStatics)
 
 export default router;

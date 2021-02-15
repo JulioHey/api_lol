@@ -2,15 +2,26 @@ import {
     AxiosStatic
 } from 'axios';
 
+
+
+
 export class SteamAPI {
     api: AxiosStatic;
     baseurl: string;
     apiKey: string;
 
-    constructor(apiKey: string,axios: AxiosStatic) {
+    apiLabels: Array<string>;
+    labels: Array<string>;
+
+    constructor(apiKey: string,axios: AxiosStatic, apiLabelsArray: Array<any>) {
         this.api = axios;
         this.baseurl = "http://api.steampowered.com";
         this.apiKey = apiKey;
+
+        const Labels = this.getArrays(apiLabelsArray);
+
+        this.labels = Labels[1];
+        this.apiLabels = Labels[0];
     }
 
     getSteamIDByUserName = async (userName: string) => {
@@ -43,27 +54,75 @@ export class SteamAPI {
 
             const status = await this.getPlayerStatistcsByID(steamID);
             
-            this.getValuableIndex(status.playerstats.stats);
+            // this.getValuableIndex(status.playerstats.stats);
+            const formatedData = this.getValuableInfo(status.playerstats.stats);
 
-            return status.playerstats.stats;
+            const formatedAchievments = this.formatAchievements(status.playerstats.achievements);
+
+            return [formatedData, formatedAchievments];
         } catch {
             return "User not found"
         }
     }
 
-    getValuableInfo(stats: any) {
+    getValuableInfo(stats: Array<any>) {
         const totalKills = stats[0].value;
         const totalDeaths = stats[1].value;
 
         const totalMathesWon = stats[102].value;
         const totalMathes = stats[103].value;
-        
+
         const totalMVPs = stats[90].value;
+        const totalHits = stats[39].value;
+        const totalFired = stats[40].value;
+
+        const accuracy = totalHits / totalFired;
+
+        // const totalContributionScore = stats[40].value;
+
+        return {
+            totalKills,
+            totalDeaths,
+            totalMathesWon,
+            totalMathes,
+            totalMVPs,
+            totalHits,
+            totalFired,
+            accuracy
+        }
+        
+    }
+
+    getArrays(apiLabelArray: Array<any>) {
+        const apiLabels: Array<string> = [];
+        const Labels: Array<string> = [];
+
+        apiLabelArray.map((element) => {
+            apiLabels.push(element.api_label);
+            Labels.push(element.label);
+        });
+
+        return [apiLabels, Labels];
+
+    }
+
+    formatAchievements(apiArray: Array<any>) {
+        const labels: Array<string> = []
+
+        apiArray.map((element) => {
+            const index = this.apiLabels.indexOf(element.name);
+
+            labels.push(this.labels[index]);
+        });
+
+        return labels;
     }
 
     getValuableIndex(stats: Array<any>) {
+        
+
         stats.map((element, index) => {
-            if (element.name === "total_mvps") {
+            if (element.name === "total_shots_hit") {
                 console.log(index) 
             }
         })
