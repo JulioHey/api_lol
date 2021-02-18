@@ -66,11 +66,11 @@ export class SteamAPI {
             this.getValuableIndex(status.playerstats.stats);
             const formatedData = this.getValuableInfo(status.playerstats.stats);
 
-            const formatedAchievments = this.formatAchievements(status.playerstats.achievements);
+            const formatedAchievments = await this.formatAchievements(status.playerstats.achievements);
 
             return [formatedData, formatedAchievments];
         } catch(error) {
-            return error
+            return error;
         }
     }
 
@@ -116,12 +116,12 @@ export class SteamAPI {
     // }
 
     formatAchievements(apiArray: Array<any>) {
-        const founds: Array<any> = []
+        const founds: Array<any> = [];
 
-        this.apiLabels.map((apiElement) => {
-            apiElement.some((element: any) => {
-                if (element.api_label === apiElement.api_label) {
-                    founds.push(element)
+        this.apiLabels.map( apiElement => {
+            apiArray.some((element: any) => {
+                if (element.name === apiElement.api_label) {
+                    founds.push(apiElement);
                 }
             });
         });
