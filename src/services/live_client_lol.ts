@@ -1,29 +1,52 @@
 import { AxiosStatic } from 'axios';
+import {Agent} from "https";
 
 
-export class getMatchs {
+export class LiveClient {
     api: AxiosStatic;
     url: string;
-    apiKey: string;
+    https: any;
+    // apiKey: string;
 
-    constructor(apiKey: string, axios: AxiosStatic) {
+    constructor(axios: AxiosStatic) {
         this.api = axios;
-        this.apiKey = apiKey;
+        // this.apiKey = apiKey;
+        this.https = new Agent();
 
         this.url = "";
     }
 
-    async getInfo(summoner: string, server?: string) {
-        this.url = this.createUrl(this.apiKey, summoner, server);
+    async compareNames(summoner: string) {
+        // const {summonerName} = await this.getActiveName();
 
-        const response = await this.api.get(this.url);
+        // if (summonerName === summoner) {
+        //     return true;
+        // } else {
+        //     return false;
+        // }
+       return await this.getActiveName();
 
-        return response.data;
     }
 
-    createUrl(apiKey: string, accountid: string, server?: string){
-        const url = ``
-        return url;
+    async getActiveName(): Promise<any> {
+        this.url = this.createUrl();
+        const httpsAgent = this.constructAgent();
+
+        const {data}: any = await this.api.get(this.url, {httpsAgent})
+        // const {summonerName} = data;
+        // return {summonerName};
+        return data;
     }
 
+    createUrl(){
+        return `https://127.0.0.1:2999/liveclientdata/allgamedata`;
+    }
+
+    constructAgent() {
+        return (
+            new Agent({
+                rejectUnauthorized: false,
+            })
+        )
+    }
 }

@@ -1,0 +1,837 @@
+[
+    {
+      "api_label": "GIVE_DAMAGE_LOW",
+      "label": "Points in Your Favor",
+      "number": 0
+    },
+    {
+      "api_label": "UNSTOPPABLE_FORCE",
+      "label": "The Unstoppable Force",
+      "number": 1
+    },
+    {
+      "api_label": "KILL_ENEMY_RELOADING",
+      "label": "Shot With Their Pants Down",
+      "number": 2
+    },
+    {
+      "api_label": "KILL_ENEMY_LOW",
+      "label": "Body bagger",
+      "number": 3
+    },
+    {
+      "api_label": "WIN_ROUNDS_LOW",
+      "label": "Newb World Order",
+      "number": 4
+    },
+    {
+      "api_label": "IMMOVABLE_OBJECT",
+      "label": "The Immovable Object",
+      "number": 5
+    },
+    {
+      "api_label": "EARN_MONEY_LOW",
+      "number": 6,
+      "label": "War Bonds"
+    },
+    {
+      "api_label": "KILL_LOW_DAMAGE",
+      "number": 7,
+      "label": "Finishing Schooled"
+    },
+    {
+      "api_label": "KILL_SNIPER_WITH_SNIPER",
+      "number": 8,
+      "label": "Eye to Eye!"
+    },
+    {
+      "api_label": "LOSSLESS_EXTERMINATION",
+      "number": 9,
+      "label": "Mercy Rule"
+    },
+    {
+      "api_label": "KILL_ENEMY_LAST_BULLET",
+      "number": 10,
+      "label": "Magic Bullet"
+    },
+    {
+      "api_label": "DAMAGE_NO_KILL",
+      "number": 11,
+      "label": "Primer"
+    },
+    {
+      "api_label": "HEADSHOTS_IN_ROUND",
+      "number": 12,
+      "label": "Head Shred Redemption"
+    },
+    {
+      "api_label": "HIP_SHOT",
+      "number": 13,
+      "label": "Hip Shot"
+    },
+    {
+      "api_label": "FAST_ROUND_WIN",
+      "number": 14,
+      "label": "Blitzkrieg"
+    },
+    {
+      "api_label": "KILLING_SPREE",
+      "number": 15,
+      "label": "Ballistic"
+    },
+    {
+      "api_label": "DOMINATIONS_LOW",
+      "number": 16,
+      "label": "Repeat Offender"
+    },
+    {
+      "api_label": "LAST_PLAYER_ALIVE",
+      "number": 17,
+      "label": "War of Attrition"
+    },
+    {
+      "api_label": "WIN_BOMB_PLANT",
+      "number": 18,
+      "label": "Someone Set Us Up The Bomb"
+    },
+    {
+      "api_label": "KILLS_WITH_MULTIPLE_GUNS",
+      "number": 19,
+      "label": "Variety Hour"
+    },
+    {
+      "api_label": "WIN_BOMB_DEFUSE",
+      "number": 20,
+      "label": "Rite of First Defusal"
+    },
+    {
+      "api_label": "KILL_ENEMY_TEAM",
+      "number": 21,
+      "label": "The Cleaner"
+    },
+    {
+      "api_label": "KILL_ENEMIES_WHILE_BLIND",
+      "number": 22,
+      "label": "Blind Fury"
+    },
+    {
+      "api_label": "REVENGES_LOW",
+      "number": 23,
+      "label": "Insurgent"
+    },
+    {
+      "api_label": "DOMINATION_OVERKILLS_LOW",
+      "number": 24,
+      "label": "Overkill"
+    },
+    {
+      "api_label": "KILL_WHEN_AT_LOW_HEALTH",
+      "number": 25,
+      "label": "Dead Man Stalking"
+    },
+    {
+      "api_label": "KILLING_SPREE_ENDER",
+      "number": 26,
+      "label": "Kill One, Get One Spree"
+    },
+    {
+      "api_label": "AVENGE_FRIEND",
+      "number": 27,
+      "label": "Avenging Angel"
+    },
+    {
+      "api_label": "KILL_ENEMY_IN_AIR",
+      "number": 28,
+      "label": "Bunny Hunt"
+    },
+    {
+      "api_label": "GIVE_DAMAGE_MED",
+      "number": 29,
+      "label": "You´ve Made Your Points"
+    },
+    {
+      "api_label": "KILL_BOMB_PICKUP",
+      "number": 30,
+      "label": "Participation Award"
+    },
+    {
+      "api_label": "WIN_PISTOLROUNDS_LOW",
+      "number": 31,
+      "label": "Piece Initiative"
+    },
+    {
+      "api_label": "KILL_TWO_WITH_ONE_SHOT",
+      "number": 32,
+      "label": "Ammo Conservation"
+    },
+    {
+      "api_label": "WIN_KNIFE_FIGHTS_LOW",
+      "number": 33,
+      "label": "Make the Cut"
+    },
+    {
+      "api_label": "KILL_ENEMY_MED",
+      "number": 34,
+      "label": "Corpseman"
+    },
+    {
+      "api_label": "FLAWLESS_VICTORY",
+      "number": 35,
+      "label": "Clean Sweep"
+    },
+    {
+      "api_label": "KILL_WITH_OWN_GUN",
+      "number": 36,
+      "label": "Lost and F0wnd"
+    },
+    {
+      "api_label": "WIN_ROUNDS_MED",
+      "number": 37,
+      "label": "Pro-moted"
+    },
+    {
+      "api_label": "HEADSHOTS",
+      "number": 38,
+      "label": "Battle Sight Zero"
+    },
+    {
+      "api_label": "STILL_ALIVE",
+      "number": 39,
+      "label": "Still Alive"
+    },
+    {
+      "api_label": "BOMB_PLANT_IN_25_SECONDS",
+      "number": 40,
+      "label": "Short Fuse"
+    },
+    {
+      "api_label": "KILL_WHILE_IN_AIR",
+      "number": 41,
+      "label": "Death From Above"
+    },
+    {
+      "api_label": "DOMINATIONS_HIGH",
+      "number": 42,
+      "label": "Decimator"
+    },
+    {
+      "api_label": "KILL_BOMB_DEFUSER",
+      "number": 43,
+      "label": "Counter-Counter-Terrorist"
+    },
+    {
+      "api_label": "CONCURRENT_DOMINATIONS",
+      "number": 44,
+      "label": "Hat Trick"
+    },
+    {
+      "api_label": "KILL_SNIPERS",
+      "number": 45,
+      "label": "Snipe Hunter"
+    },
+    {
+      "api_label": "WIN_BOMB_PLANT_AFTER_RECOVERY",
+      "number": 46,
+      "label": "Blast Will and Testamant"
+    },
+    {
+      "api_label": "EXTENDED_DOMINATION",
+      "number": 47,
+      "label": "Excessive Brutality"
+    },
+    {
+      "api_label": "BASE_SCAMPER",
+      "number": 48,
+      "label": "Base Scamper"
+    },
+    {
+      "api_label": "BORN_READY",
+      "number": 49,
+      "label": "Born Ready"
+    },
+    {
+      "api_label": "PISTOL_ROUND_KNIFE_KILL",
+      "number": 50,
+      "label": "Street Fighter"
+    },
+    {
+      "number": 51,
+      "api_label": "WIN_MAP_DE_DUST2",
+      "label": "Dust2 Map Veteran"
+    },
+    {
+      "number": 52,
+      "api_label": "WIN_PISTOLROUNDS_MED",
+      "label": "Give Piece a Chance"
+    },
+    {
+      "api_label": "EARN_MONEY_MED",
+      "number": 53,
+      "label": "Spoils of War"
+    },
+    {
+      "number": 54,
+      "api_label": "BLOODLESS_VICTORY",
+      "label": "Cold War"
+    },
+    {
+      "api_label": "WIN_GUN_GAME_ROUNDS_LOW",
+      "number": 55,
+      "label": "Gungamer"
+    },
+    {
+      "api_label": "KILL_SNIPER_WITH_KNIFE",
+      "number": 56,
+      "label": "Sknifed"
+    },
+    {
+      "api_label": "KILLS_ENEMY_WEAPON",
+      "number": 57,
+      "label": "Friendly Firearms"
+    },
+    {
+      "api_label": "KILL_ENEMY_BLINDED",
+      "number": 58,
+      "label": "Blind Ambition"
+    },
+    {
+      "api_label": "WIN_MAP_DE_LAKE",
+      "number": 59,
+      "label": "Vacation"
+    },
+    {
+      "api_label": "GUN_GAME_KILL_KNIFER",
+      "number": 60,
+      "label": "Denied!"
+    },
+    {
+      "number": 61,
+      "api_label": "GUN_GAME_FIRST_KILL",
+      "label": "FIRST!"
+    },
+    {
+      "api_label": "DEFUSE_DEFENSE",
+      "number": 62,
+      "label": "Defusus Interruptus"
+    },
+    {
+      "api_label": "DONATE_WEAPONS",
+      "number": 63,
+      "label": "Killanthropist"
+    },
+    {
+      "number": 64,
+      "api_label": "KILL_ENEMY_HKP2000",
+      "label": "P2000/USP Tactical Expert"
+    },
+    {
+      "api_label": "BOMB_DEFUSE_CLOSE_CALL",
+      "number": 65,
+      "label": "Second to None"
+    },
+    {
+      "api_label": "KILL_ENEMY_P250",
+      "number": 66,
+      "label": "P250 Expert"
+    },
+    {
+      "number": 67,
+      "api_label": "WIN_DUAL_DUEL",
+      "label": "Akimbo King"
+    },
+    {
+      "number": 68,
+      "api_label": "KILL_ENEMY_SG556",
+      "label": "SG553 Expert"
+    },
+    {
+      "number": 69,
+      "api_label": "BOMB_PLANT_LOW",
+      "label": "Boomala Boomala"
+    },
+    {
+      "number": 70,
+      "api_label": "KILL_ENEMY_GLOCK",
+      "label": "Glock-18 Expert"
+    },
+    {
+      "number": 71,
+      "api_label": "KILL_ENEMY_AWP",
+      "label": "AWP Expert"
+    },
+    {
+      "number": 72,
+      "api_label": "KILL_ENEMIES_WHILE_BLIND_HARD",
+      "label": "Spray and Pray"
+    },
+    {
+      "number": 73,
+      "api_label": "SILENT_WIN",
+      "label": "Black Bag Operation"
+    },
+    {
+      "number": 74,
+      "api_label": "KILL_WITH_EVERY_WEAPON",
+      "label": "Expert Marksman"
+    },
+    {
+      "number": 75,
+      "api_label": "WIN_MAP_DE_INFERNO",
+      "label": "Inferno Map Veteran"
+    },
+    {
+      "number": 76,
+      "api_label": "KILL_HOSTAGE_RESCUER",
+      "label": "Dead Shepherd"
+    },
+    {
+      "number": 77,
+      "api_label": "REVENGES_HIGH",
+      "label": "Can't Keep a Good Man Down"
+    },
+    {
+      "number": 78,
+      "api_label": "KILL_ENEMY_FIVESEVEN",
+      "label": "Five-SeveN Expert"
+    },
+    {
+      "number": 79,
+      "api_label": "KILL_ENEMY_DEAGLE",
+      "label": "Desert Eagle Expert"
+    },
+    {
+      "number": 80,
+      "api_label": "SURVIVE_GRENADE",
+      "label": "Shrapnelproof"
+    },
+    {
+      "number": 81,
+      "api_label": "KILL_ENEMY_ELITE",
+      "label": "Dual Berettas Expert"
+    },
+    {
+      "number": 82,
+      "api_label": "ONE_SHOT_ONE_KILL",
+      "label": "One Shot One Kill"
+    },
+    {
+      "number": 82,
+      "api_label": "KILL_ENEMY_SSG08",
+      "label": "SSG 08 Expert"
+    },
+    {
+      "number": 83,
+      "api_label": "DOMINATION_OVERKILLS_MATCH",
+      "label": "Ten Angry Men"
+    },
+    {
+      "number": 85,
+      "api_label": "DEAD_GRENADE_KILL",
+      "label": "Premature Burial"
+    },
+    {
+      "number": 86,
+      "api_label": "KILL_ENEMY_AK47",
+      "label": "AK-47 Expert"
+    },
+    {
+      "number": 87,
+      "api_label": "KILL_ENEMY_FAMAS",
+      "label": "FAMAS Expert"
+    },
+    {
+      "number": 88,
+      "api_label": "GIVE_DAMAGE_HIGH",
+      "label": "A Million Points of Blight"
+    },
+    {
+      "number": 89,
+      "api_label": "WIN_MAP_AR_SHOOTS",
+      "label": "Shoots Vet"
+    },
+    {
+      "number": 90,
+      "api_label": "KILL_ENEMY_KNIFE",
+      "label": "Knife Expert"
+    },
+    {
+      "number": 91,
+      "api_label": "GUN_GAME_ROUNDS_LOW",
+      "label": "Practice Practice Practice"
+    },
+    {
+      "number": 92,
+      "api_label": "KILL_ENEMY_M4AR",
+      "label": "M4 AR Expert"
+    },
+    {
+      "number": 93,
+      "api_label": "WIN_MAP_DE_BANK",
+      "label": "Bank On It"
+    },
+    {
+      "number": 94,
+      "api_label": "KILL_ENEMY_SCAR20",
+      "label": "SCAR-20 Expert"
+    },
+    {
+      "number": 95,
+      "api_label": "WIN_PISTOLROUNDS_HIGH",
+      "label": "Piece Treaty"
+    },
+    {
+      "number": 96,
+      "api_label": "KILL_ENEMY_MAG7",
+      "label": "MAG-7 Expert"
+    },
+    {
+      "number": 97,
+      "api_label": "KILLER_AND_ENEMY_IN_AIR",
+      "label": "Aerial Necrobatics"
+    },
+    {
+      "number": 98,
+      "api_label": "KILL_ENEMY_MP9",
+      "label": "MP9 Expert"
+    },
+    {
+      "number": 99,
+      "api_label": "KILL_ENEMY_AUG",
+      "label": "AUG Expert"
+    },
+    {
+      "number": 100,
+      "api_label": "KILL_ENEMY_HIGH",
+      "label": "God of War"
+    },
+    {
+      "number": 101,
+      "api_label": "KILL_ENEMY_MAC10",
+      "label": "MAC-10 Expert"
+    },
+    {
+      "number": 102,
+      "api_label": "KILL_ENEMY_G3SG1",
+      "label": "G3SG1 Expert"
+    },
+    {
+      "number": 103,
+      "api_label": "WIN_ROUNDS_WITHOUT_BUYING",
+      "label": "The Frugal Beret"
+    },
+    {
+      "number": 104,
+      "api_label": "KILL_ENEMY_TEC9",
+      "label": "Tec-9 Expert"
+    },
+    {
+      "number": 105,
+      "api_label": "DOMINATION_OVERKILLS_HIGH",
+      "label": "Command and Control"
+    },
+    {
+      "number": 106,
+      "api_label": "GUN_GAME_CONSERVATIONIST",
+      "label": "Conservationist"
+    },
+    {
+      "number": 107,
+      "api_label": "KILL_ENEMY_NEGEV",
+      "label": "Negev Expert"
+    },
+    {
+      "number": 108,
+      "api_label": "WIN_ROUNDS_HIGH",
+      "label": "Leet-er of Men"
+    },
+    {
+      "number": 109,
+      "api_label": "MEDALIST",
+      "label": "Awardist"
+    },
+    {
+      "number": 110,
+      "api_label": "WIN_MAP_DE_STMARC",
+      "label": "Marcsman"
+    },
+    {
+      "number": 111,
+      "api_label": "CAUSE_FRIENDLY_FIRE_WITH_FLASHBANG",
+      "label": "The Road to Hell"
+    },
+    {
+      "number": 112,
+      "api_label": "BOMB_DEFUSE_LOW",
+      "label": "The Hurt Blocker"
+    },
+    {
+      "number": 113,
+      "api_label": "KILL_ENEMY_TASER",
+      "label": "Zeus x27 Expert"
+    },
+    {
+      "number": 114,
+      "api_label": "KILL_ENEMY_SAWEDOFF",
+      "label": "Sawed-Off Expert"
+    },
+    {
+      "number": 115,
+      "api_label": "WIN_MAP_DE_SAFEHOUSE",
+      "label": "My House"
+    },
+    {
+      "number": 116,
+      "api_label": "GUN_GAME_KNIFE_KILL_KNIFER",
+      "label": "Knife on Knife"
+    },
+    {
+      "number": 117,
+      "api_label": "KILL_ENEMY_MP7",
+      "label": "MP7 Expert"
+    },
+    {
+      "number": 118,
+      "api_label": "KILL_ENEMY_NOVA",
+      "label": "Nova Expert"
+    },
+    {
+      "number": 119,
+      "api_label": "KILL_ENEMY_GALILAR",
+      "label": "Galil AR Expert"
+    },
+    {
+      "number": 120,
+      "api_label": "WIN_MAP_DE_NUKE",
+      "label": "Nuke Map Veteran"
+    },
+    {
+      "number": 121,
+      "api_label": "GUN_GAME_SMG_KILL_KNIFER",
+      "label": "Level Playing Field"
+    },
+    {
+      "number": 122,
+      "api_label": "META_PISTOL",
+      "label": "Pistol Master"
+    },
+    {
+      "number": 123,
+      "api_label": "KILL_ENEMY_UMP45",
+      "label": "UMP-45 Expert"
+    },
+    {
+      "number": 124,
+      "api_label": "GOOSE_CHASE",
+      "label": "Wild Gooseman Chase"
+    },
+    {
+      "number": 125,
+      "api_label": "KILL_ENEMY_P90",
+      "label": "P90 Expert"
+    },
+    {
+      "number": 126,
+      "api_label": "WIN_MAP_DE_TRAIN",
+      "label": "Train Map Veteran"
+    },
+    {
+      "number": 127,
+      "api_label": "WIN_MAP_DE_SUGARCANE",
+      "label": "Run of the Mill"
+    },
+    {
+      "number": 128,
+      "api_label": "TR_BOMB_PLANT_LOW",
+      "label": "Shorter Fuse"
+    },
+    {
+      "number": 129,
+      "api_label": "RESCUE_ALL_HOSTAGES",
+      "label": "Good Shepherd"
+    },
+    {
+      "number": 130,
+      "api_label": "KILL_ENEMY_M249",
+      "label": "M249 Expert"
+    },
+    {
+      "number": 131,
+      "api_label": "WIN_KNIFE_FIGHTS_HIGH",
+      "label": "The Bleeding Edge"
+    },
+    {
+      "number": 132,
+      "api_label": "WIN_MAP_AR_BAGGAGE",
+      "label": "Baggage Claimer"
+    },
+    {
+      "number": 133,
+      "api_label": "KILL_ENEMY_XM1014",
+      "label": "XM1014 Expert"
+    },
+    {
+      "number": 134,
+      "api_label": "EARN_MONEY_HIGH",
+      "label": "Blood Money"
+    },
+    {
+      "number": 135,
+      "api_label": "KILL_ENEMY_BIZON",
+      "label": "PP-Bizon Expert"
+    },
+    {
+      "number": 136,
+      "api_label": "WIN_MAP_CS_OFFICE",
+      "label": "Office Map Veteran"
+    },
+    {
+      "number": 137,
+      "api_label": "META_RIFLE",
+      "label": "Rifle Master"
+    },
+    {
+      "number": 138,
+      "api_label": "META_SHOTGUN",
+      "label": "Shotgun Master"
+    },
+    {
+      "number": 139,
+      "api_label": "SURVIVE_MANY_ATTACKS",
+      "label": "Target-Hardened"
+    },
+    {
+      "number": 140,
+      "api_label": "KILL_ENEMY_HEGRENADE",
+      "label": "HE Grenade Expert"
+    },
+    {
+      "number": 141,
+      "api_label": "WIN_MAP_DE_SHORTTRAIN",
+      "label": "Shorttrain Map Veteran"
+    },
+    {
+      "number": 142,
+      "api_label": "FAST_HOSTAGE_RESCUE",
+      "label": "Freed With Speed"
+    },
+    {
+      "number": 143,
+      "api_label": "META_SMG",
+      "label": "Sub-Machine Gun Master"
+    },
+    {
+      "number": 144,
+      "api_label": "GUN_GAME_TARGET_SECURED",
+      "label": "Target Secured"
+    },
+    {
+      "number": 145,
+      "api_label": "WIN_GUN_GAME_ROUNDS_MED",
+      "label": "Keep on Gunning"
+    },
+    {
+      "number": 146,
+      "api_label": "GUN_GAME_FIRST_THING_FIRST",
+      "label": "First Things First"
+    },
+    {
+      "number": 147,
+      "api_label": "PLAY_EVERY_GUNGAME_MAP",
+      "label": "Tourist"
+    },
+    {
+      "number": 148,
+      "api_label": "KILL_ENEMY_MOLOTOV",
+      "label": "Flame Expert"
+    },
+    {
+      "number": 149,
+      "api_label": "KILLED_DEFUSER_WITH_GRENADE",
+      "label": "Defuse This!"
+    },
+    {
+      "number": 150,
+      "api_label": "GUN_GAME_ROUNDS_MED",
+      "label": "Gun Collector"
+    },
+    {
+      "number": 151,
+      "api_label": "TR_BOMB_DEFUSE_LOW",
+      "label": "Quick Cut"
+    },
+    {
+      "number": 152,
+      "api_label": "GRENADE_MULTIKILL",
+      "label": "Three the Hard Way"
+    },
+    {
+      "number": 153,
+      "api_label": "BREAK_WINDOWS",
+      "label": "A World of Pane"
+    },
+    {
+      "number": 154,
+      "api_label": "WIN_MAP_CS_ITALY",
+      "label": "Italy Map Veteran"
+    },
+    {
+      "number": 155,
+      "api_label": "META_WEAPONMASTER",
+      "label": "Master At Arms"
+    },
+    {
+      "number": 156,
+      "api_label": "WIN_EVERY_GUNGAME_MAP",
+      "label": "Marksman"
+    },
+    {
+      "number": 157,
+      "api_label": "WIN_MAP_DE_DUST",
+      "label": "Dust Map Veteran"
+    },
+    {
+      "number": 158,
+      "api_label": "BOMB_MULTIKILL",
+      "label": "Clusterstruck"
+    },
+    {
+      "number": 159,
+      "api_label": "WIN_MAP_DE_AZTEC",
+      "label": "Aztec Map Veteran"
+    },
+    {
+      "number": 160,
+      "api_label": "GUN_GAME_RAMPAGE",
+      "label": "Rampage!"
+    },
+    {
+      "number": 161,
+      "api_label": "RESCUE_HOSTAGES_LOW",
+      "label": "Cowboy Diplomacy"
+    },
+    {
+      "number": 162,
+      "api_label": "WIN_GUN_GAME_ROUNDS_HIGH",
+      "label": "Kill of the Century"
+    },
+    {
+      "number": 163,
+      "api_label": "RESCUE_HOSTAGES_MED",
+      "label": "SAR Czar"
+    },
+    {
+      "number": 164,
+      "api_label": "WIN_GUN_GAME_ROUNDS_ULTIMATE",
+      "label": "Cold Pizza Eater"
+    },
+    {
+      "number": 165,
+      "api_label": "WIN_GUN_GAME_ROUNDS_EXTREME",
+      "label": "The Professional"
+    },
+    {
+      "number": 166,
+      "api_label": "GUN_GAME_ROUNDS_HIGH",
+      "label": "King of the Kill"
+    }
+  ]

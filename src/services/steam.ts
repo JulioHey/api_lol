@@ -1,6 +1,7 @@
 import {
     AxiosStatic
 } from 'axios';
+import { APIARRAY } from './achivements_array';
 
 
 
@@ -10,18 +11,20 @@ export class SteamAPI {
     baseurl: string;
     apiKey: string;
 
-    apiLabels: Array<string>;
-    labels: Array<string>;
+    apiLabels: Array<any>;
+    // labels: Array<string>;
 
     constructor(apiKey: string,axios: AxiosStatic, apiLabelsArray: Array<any>) {
         this.api = axios;
         this.baseurl = "http://api.steampowered.com";
         this.apiKey = apiKey;
 
-        const Labels = this.getArrays(apiLabelsArray);
+        // const Labels = this.getArrays(apiLabelsArray);
 
-        this.labels = Labels[1];
-        this.apiLabels = Labels[0];
+        // this.labels = Labels[1];
+        // this.apiLabels = Labels[0];
+
+        this.apiLabels = apiLabelsArray;
     }
 
     getSteamIDByUserName = async (userName: string) => {
@@ -41,9 +44,11 @@ export class SteamAPI {
     }
 
     getPlayerStatistcsByID = async (steamID: any) => {
-        const apiURL = this.constructURL(`/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=${this.apiKey}&steamid=${steamID}`)
+        const apiURL = this.constructURL(`/ISteamUserStats/GetUserStatsForGame/v002/?appid=730&key=${this.apiKey}&steamid=${steamID}`)
     
         const response = await this.api.get(apiURL);
+
+        // return apiURL;
 
         return response.data;
     }
@@ -52,16 +57,20 @@ export class SteamAPI {
         try {
             const steamID = await this.getSteamIDByUserName(userName);
 
+            // return steamID;
+
             const status = await this.getPlayerStatistcsByID(steamID);
+
+            // return status;
             
-            // this.getValuableIndex(status.playerstats.stats);
+            this.getValuableIndex(status.playerstats.stats);
             const formatedData = this.getValuableInfo(status.playerstats.stats);
 
             const formatedAchievments = this.formatAchievements(status.playerstats.achievements);
 
             return [formatedData, formatedAchievments];
-        } catch {
-            return "User not found"
+        } catch(error) {
+            return error
         }
     }
 
@@ -93,34 +102,34 @@ export class SteamAPI {
         
     }
 
-    getArrays(apiLabelArray: Array<any>) {
-        const apiLabels: Array<string> = [];
-        const Labels: Array<string> = [];
+    // getArrays(apiLabelArray: Array<any>) {
+    //     const apiLabels: Array<string> = [];
+    //     const Labels: Array<string> = [];
 
-        apiLabelArray.map((element) => {
-            apiLabels.push(element.api_label);
-            Labels.push(element.label);
-        });
+    //     apiLabelArray.map((element) => {
+    //         apiLabels.push(element.api_label);
+    //         Labels.push(element.label);
+    //     });
 
-        return [apiLabels, Labels];
+    //     return [apiLabels, Labels];
 
-    }
+    // }
 
     formatAchievements(apiArray: Array<any>) {
-        const labels: Array<string> = []
+        const founds: Array<any> = []
 
-        apiArray.map((element) => {
-            const index = this.apiLabels.indexOf(element.name);
-
-            labels.push(this.labels[index]);
+        this.apiLabels.map((apiElement) => {
+            apiElement.some((element: any) => {
+                if (element.api_label === apiElement.api_label) {
+                    founds.push(element)
+                }
+            });
         });
 
-        return labels;
+        return founds;
     }
 
     getValuableIndex(stats: Array<any>) {
-        
-
         stats.map((element, index) => {
             if (element.name === "total_shots_hit") {
                 console.log(index) 
