@@ -2,15 +2,23 @@ import {
     Router
 } from 'express';
 
+import * as dotenv from 'dotenv';
+
 import axios from 'axios';
 
 import {
     SummonerController
 } from '../services/summonerController';
 
+
+dotenv.config();
+
+const RiotApiKey = process.env.RIOT_KEY ? process.env.RIOT_KEY : "";
+const SteamApiKey = process.env.STEAM_KEY ? process.env.STEAM_KEY : "";
+
 const router = Router();
 
-const getSummonerController = new SummonerController("RGAPI-626731c3-964b-4753-b2c4-5bf357cbea36", axios, "E8FB08E835538312544F4D907361BF2E");
+const getSummonerController = new SummonerController(RiotApiKey, axios, SteamApiKey);
 
 router.get("/summoner", getSummonerController.info);
 router.get("/name", getSummonerController.name);
