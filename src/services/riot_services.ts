@@ -1,5 +1,4 @@
 import { AxiosStatic } from 'axios';
-import { response } from 'express';
 
 
 export class getSummoner {

@@ -8,7 +8,7 @@ import { AxiosStatic } from 'axios';
 
 import {
     SteamAPI
-} from '../services/steam';
+} from '../services/steam_services';
 
 
 
@@ -19,11 +19,23 @@ export class SteamController {
         this.SteamAPI = new SteamAPI(steamAPIKEY, axios, achievments);
     }
 
-    getStatics = async (request: Request, response: Response) => {
+    getStats = async (request: Request, response: Response) => {
         try {
             const { userName } = request.body;
 
             const userInfo = await this.SteamAPI.getStatics(userName);
+            
+            return response.send(userInfo);
+        } catch (error) {
+            return response.json(error);
+        }
+    }
+
+    getWeaponStats = async (request: Request, response: Response) => {
+        try {
+            const { userName } = request.body;
+
+            const userInfo = await this.SteamAPI.getWeaponsStats(userName);
             
             return response.send(userInfo);
         } catch (error) {

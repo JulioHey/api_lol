@@ -7,7 +7,7 @@ import { AxiosStatic } from 'axios';
 
 import {
     getSummoner
-} from '../services/get_user_name';
+} from '../services/riot_services';
 
 import {
     LiveClient

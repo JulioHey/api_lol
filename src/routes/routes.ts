@@ -30,7 +30,8 @@ const steamController = new SteamController(axios, SteamApiKey, achievments);
 router.get("/lol/info", summonerController.basicInfo);
 router.get("/lol/authenticate", summonerController.authenticate);
 router.get("/lol/status", summonerController.basicStatus);
-router.get("/csgo/steamId", steamController.getStatics);
+router.get("/csgo/steamId", steamController.getStats);
+router.get("/csgo/weapons", steamController.getWeaponStats);
 // router.get("/teste", getSummonerController.teste);
 
 export default router;
