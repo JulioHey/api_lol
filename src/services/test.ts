@@ -2,7 +2,7 @@ import {
     APIARRAY
 } from "./achivements_array";
 
-import a from "./achievmentsOrdered.json";
+// import a from "./achievmentsOrdered.json";
 
 export class Test {
     tranformArrays() {
@@ -89,6 +89,6 @@ export class Test {
 
         // console.log(founds);
 
-        console.log(a)
+        // console.log(a)
     }
 }
