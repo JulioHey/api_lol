@@ -6,9 +6,15 @@ import * as dotenv from 'dotenv';
 
 import axios from 'axios';
 
+import achievments from '../static/achievmentsOrdered.json';
+
 import {
     SummonerController
-} from '../services/summonerController';
+} from '../controllers/summoner_controller';
+
+import {
+    SteamController
+} from '../controllers/steam_controller';
 
 
 dotenv.config();
@@ -18,12 +24,13 @@ const SteamApiKey = process.env.STEAM_KEY ? process.env.STEAM_KEY : "";
 
 const router = Router();
 
-const getSummonerController = new SummonerController(RiotApiKey, axios, SteamApiKey);
+const summonerController = new SummonerController(RiotApiKey, axios);
+const steamController = new SteamController(axios, SteamApiKey, achievments);
 
-router.get("/summoner", getSummonerController.info);
-router.get("/name", getSummonerController.name);
-router.get("/status", getSummonerController.status);
-router.get("/steamId", getSummonerController.getStatics);
+router.get("/lol/info", summonerController.basicInfo);
+router.get("/lol/authenticate", summonerController.authenticate);
+router.get("/lol/status", summonerController.basicStatus);
+router.get("/csgo/steamId", steamController.getStatics);
 // router.get("/teste", getSummonerController.teste);
 
 export default router;

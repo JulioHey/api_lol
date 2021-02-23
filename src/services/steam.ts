@@ -1,9 +1,6 @@
 import {
     AxiosStatic
 } from 'axios';
-import { APIARRAY } from './achivements_array';
-
-
 
 
 export class SteamAPI {
@@ -57,7 +54,7 @@ export class SteamAPI {
         try {
             const steamID = await this.getSteamIDByUserName(userName);
 
-            // return steamID;
+            console.log(steamID);
 
             const status = await this.getPlayerStatistcsByID(steamID);
 
