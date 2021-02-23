@@ -101,36 +101,38 @@ export class SteamAPI {
         const totalKillsMolotov = stats[179].value;
         const totalKillsDecoy = stats[180].value;
 
-        const glockStats: WeaponStaticProps = this.constructWeaponProps(stats, 11, 50, 64);
-        const deagleStats: WeaponStaticProps = this.constructWeaponProps(stats, 12, 49, 63);
-        const eliteStats: WeaponStaticProps = this.constructWeaponProps(stats, 13, 51, 65);
-        const fivesevenStats: WeaponStaticProps = this.constructWeaponProps(stats, 14, 52, 66);
-        const xm1014Stats: WeaponStaticProps = this.constructWeaponProps(stats, 15, 61, 75);
-        const mac10Stats: WeaponStaticProps = this.constructWeaponProps(stats, 16, 59, 73);
-        const ump45Stats: WeaponStaticProps = this.constructWeaponProps(stats, 17, 60, 74);
-        const p90Stats: WeaponStaticProps = this.constructWeaponProps(stats, 18, 58, 72);
-        const awpStats: WeaponStaticProps = this.constructWeaponProps(stats, 19, 53, 67);
-        const ak47Stats: WeaponStaticProps = this.constructWeaponProps(stats, 20, 54, 68);
-        const augStats: WeaponStaticProps = this.constructWeaponProps(stats, 21, 55, 69);
-        const famasStats: WeaponStaticProps = this.constructWeaponProps(stats, 22, 56, 70);
-        const g3sg1Stats: WeaponStaticProps = this.constructWeaponProps(stats, 23, 57, 71);
-        const m249Stats: WeaponStaticProps = this.constructWeaponProps(stats, 24, 62, 76);
-        const hkp2000Stats: WeaponStaticProps = this.constructWeaponProps(stats, 136, 137, 138);
-        const p250Stats: WeaponStaticProps = this.constructWeaponProps(stats, 140, 141, 139);
-        const sg556Stats: WeaponStaticProps = this.constructWeaponProps(stats, 142, 143, 144);
-        const scar20Stats: WeaponStaticProps = this.constructWeaponProps(stats, 146, 147, 144);
-        const ssg08Stats: WeaponStaticProps = this.constructWeaponProps(stats, 150, 148, 149);
-        const mp7Stats: WeaponStaticProps = this.constructWeaponProps(stats, 153, 151, 152);
-        const mp9Stats: WeaponStaticProps = this.constructWeaponProps(stats, 154, 155, 156);
-        const novaStats: WeaponStaticProps = this.constructWeaponProps(stats, 158, 159, 157);
-        const negevStats: WeaponStaticProps = this.constructWeaponProps(stats, 161, 162, 160);
-        const sawedoffStats: WeaponStaticProps = this.constructWeaponProps(stats, 165, 163, 164);
-        const bizonStats: WeaponStaticProps = this.constructWeaponProps(stats, 168, 166, 167);
-        const tec9Stats: WeaponStaticProps = this.constructWeaponProps(stats, 169, 170, 171);
-        const mag7Stats: WeaponStaticProps = this.constructWeaponProps(stats, 174, 172, 173);
-        const m4a1Stats: WeaponStaticProps = this.constructWeaponProps(stats, 177, 182, 185);
-        const galilarStats: WeaponStaticProps = this.constructWeaponProps(stats, 178, 183, 186);
-        const taserStats: WeaponStaticProps = this.constructWeaponProps(stats, 181, 184);
+        const weaponStats = {
+            glockStats: this.constructWeaponProps(stats, 11, "pistol", 50, 64),
+            deagleStats: this.constructWeaponProps(stats, 12, "pistol", 49, 63),
+            eliteStats: this.constructWeaponProps(stats, 13, "pistol", 51, 65),
+            fivesevenStats: this.constructWeaponProps(stats, 14, "pistol", 52, 66),
+            xm1014Stats: this.constructWeaponProps(stats, 15, "heavy", 61, 75),
+            mac10Stats: this.constructWeaponProps(stats, 16, "smg", 59, 73),
+            ump45Stats: this.constructWeaponProps(stats, 17, "smg", 60, 74),
+            p90Stats: this.constructWeaponProps(stats, 18, "smg", 58, 72),
+            awpStats: this.constructWeaponProps(stats, 19, "rifle", 53, 67),
+            ak47Stats: this.constructWeaponProps(stats, 20, "rifle", 54, 68),
+            augStats: this.constructWeaponProps(stats, 21, "rifle", 55, 69),
+            famasStats: this.constructWeaponProps(stats, 22, "rifle", 56, 70),
+            g3sg1Stats: this.constructWeaponProps(stats, 23, "rifle", 57, 71),
+            m249Stats: this.constructWeaponProps(stats, 24, "heavy", 62, 76),
+            hkp2000Stats: this.constructWeaponProps(stats, 136, "pistol", 137, 138),
+            p250Stats: this.constructWeaponProps(stats, 140, "pistol", 141, 139),
+            sg556Stats: this.constructWeaponProps(stats, 142, "rifle", 143, 144),
+            scar20Stats: this.constructWeaponProps(stats, 146, "rifle", 147, 144),
+            ssg08Stats: this.constructWeaponProps(stats, 150, "rifle", 148, 149),
+            mp7Stats: this.constructWeaponProps(stats, 153, "smg", 151, 152),
+            mp9Stats: this.constructWeaponProps(stats, 154, "smg", 155, 156),
+            novaStats: this.constructWeaponProps(stats, 158, "heavy", 159, 157),
+            negevStats: this.constructWeaponProps(stats, 161, "heavy", 162, 160),
+            sawedoffStats: this.constructWeaponProps(stats, 165, "heavy", 163, 164),
+            bizonStats: this.constructWeaponProps(stats, 168, "smg", 166, 167),
+            tec9Stats: this.constructWeaponProps(stats, 169, "pistol", 170, 171),
+            mag7Stats: this.constructWeaponProps(stats, 174, "heavy", 172, 173),
+            m4a1Stats: this.constructWeaponProps(stats, 177, "rifle", 182, 185),
+            galilarStats: this.constructWeaponProps(stats, 178, "rifle", 183, 186),
+            taserStats: this.constructWeaponProps(stats, 181, "utility", 184),
+        }
 
         return {
             totalContributionScore,
@@ -141,36 +143,7 @@ export class SteamAPI {
             totalKillsGrenade,
             totalKillsMolotov,
             totalKillsDecoy,
-            glockStats,
-            deagleStats,
-            eliteStats,
-            fivesevenStats,
-            xm1014Stats,
-            mac10Stats,
-            ump45Stats,
-            p90Stats,
-            awpStats,
-            ak47Stats,
-            augStats,
-            famasStats,
-            g3sg1Stats,
-            m249Stats,
-            hkp2000Stats,
-            p250Stats,
-            sg556Stats,
-            scar20Stats,
-            ssg08Stats,
-            mp7Stats,
-            mp9Stats,
-            novaStats,
-            negevStats,
-            sawedoffStats,
-            bizonStats,
-            tec9Stats,
-            mag7Stats,
-            m4a1Stats,
-            galilarStats,
-            taserStats,
+            weaponStats
         }
     }
 
@@ -200,11 +173,19 @@ export class SteamAPI {
         
     }
 
-    constructWeaponProps(stats: Array<any>,kills: number, shots?: number, hits?: number) {
+    constructWeaponProps(stats: Array<any>,kills: number, type: string, shots?: number, hits?: number) {
+        let accuracy = null;
+
+        if (hits && shots) {
+            accuracy = (Math.round(stats[hits].value * 10000 / stats[shots].value))/100;
+        }
+
         return {
             kills: stats[kills].value,
-            shots: shots ? stats[shots].value : 0,
-            hits: hits ? stats[hits].value : 0,
+            shots: shots ? stats[shots].value : null,
+            hits: hits ? stats[hits].value : null,
+            type: type,
+            accuracy: accuracy,
         }
     }
 
