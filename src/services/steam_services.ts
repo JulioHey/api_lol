@@ -4,8 +4,10 @@ import {
 
 interface WeaponStaticProps {
     kills:number
-    hits:number
-    shots:number 
+    hits:number | null
+    shots:number | null
+    type: string
+    accuracy:number | null
 }
 
 
