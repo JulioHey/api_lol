@@ -12,23 +12,22 @@ export class LiveClient {
         this.https = new Agent();
 
         this.url = "";
-    }
+    };
 
     async compareNames(summoner: string) {
         const data = await this.getActiveName();
 
         // return data.activePlayer.summonerName;
-        // // const {summonerName} = await this.getActiveName();
+        // const {summonerName} = await this.getActiveName();
 
-        // // console.log(summonerName);
+        // console.log(summonerName);
 
         if (data.activePlayer.summonerName === summoner) {
             return true;
         } else {
             return false;
         }
-
-    }
+    };
 
     async getActiveName(): Promise<any> {
         try {
@@ -45,11 +44,11 @@ export class LiveClient {
         }
 
         // return data;
-    }
+    };
 
     createUrl(){
         return `https://127.0.0.1:2999/liveclientdata/allgamedata`;
-    }
+    };
 
     constructAgent() {
         return (
@@ -57,5 +56,5 @@ export class LiveClient {
                 rejectUnauthorized: false,
             })
         )
-    }
+    };
 }
