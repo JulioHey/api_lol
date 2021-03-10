@@ -1,0 +1,317 @@
+[
+    {
+      "id": 8112,
+      "name": "Eletrocutar",
+      "icon": "perk-images/Styles/Domination/Electrocute/Electrocute.png"
+    },
+    {
+      "id": 8124,
+      "name": "Predador",
+      "icon": "perk-images/Styles/Domination/Predator/Predator.png"
+    },
+    {
+      "id": 8128,
+      "name": "Colheita Sombria",
+      "icon": "perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png"
+    },
+    {
+      "id": 9923,
+      "name": "Chuva de Lâminas",
+      "icon": "perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png"
+    },
+    {
+      "id": 8126,
+      "name": "Golpe Desleal",
+      "icon": "perk-images/Styles/Domination/CheapShot/CheapShot.png"
+    },
+    {
+      "id": 8139,
+      "name": "Gosto de Sangue",
+      "icon": "perk-images/Styles/Domination/TasteOfBlood/GreenTerror_TasteOfBlood.png"
+    },
+    {
+      "id": 8143,
+      "name": "Impacto Repentino",
+      "icon": "perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png"
+    },
+    {
+      "id": 8136,
+      "name": "Sentinela Zumbi",
+      "icon": "perk-images/Styles/Domination/ZombieWard/ZombieWard.png"
+    },
+    {
+      "id": 8120,
+      "name": "Poro Fantasma",
+      "icon": "perk-images/Styles/Domination/GhostPoro/GhostPoro.png"
+    },
+    {
+      "id": 8138,
+      "name": "Globos Oculares",
+      "icon": "perk-images/Styles/Domination/EyeballCollection/EyeballCollection.png"
+    },
+    {
+      "id": 8135,
+      "name": "Caça Voraz",
+      "icon": "perk-images/Styles/Domination/RavenousHunter/RavenousHunter.png"
+    },
+    {
+      "id": 8134,
+      "name": "Caça Ardilosa",
+      "icon": "perk-images/Styles/Domination/IngeniousHunter/IngeniousHunter.png"
+    },
+    {
+      "id": 8105,
+      "name": "Caça Incansável",
+      "icon": "perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png"
+    },
+    {
+      "id": 8106,
+      "name": "Caça Suprema",
+      "icon": "perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png"
+    },
+    {
+      "id": 8351,
+      "name": "Aprimoramento Glacial",
+      "icon": "perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png"
+    },
+    {
+      "id": 8360,
+      "name": "Livro de Feitiços Deslacrado",
+      "icon": "perk-images/Styles/Inspiration/UnsealedSpellbook/UnsealedSpellbook.png"
+    },
+    {
+      "id": 8358,
+      "name": "Protótipo: Onirruna",
+      "icon": "perk-images/Styles/Inspiration/MasterKey/MasterKey.png"
+    },
+    {
+      "id": 8306,
+      "name": "Flashtração Hextec",
+      "icon": "perk-images/Styles/Inspiration/HextechFlashtraption/HextechFlashtraption.png"
+    },
+    {
+      "id": 8304,
+      "name": "Calçados Mágicos",
+      "icon": "perk-images/Styles/Inspiration/MagicalFootwear/MagicalFootwear.png"
+    },
+    {
+      "id": 8313,
+      "name": "Sincronia Perfeita",
+      "icon": "perk-images/Styles/Inspiration/PerfectTiming/PerfectTiming.png"
+    },
+    {
+      "id": 8321,
+      "name": "Mercado do Futuro",
+      "icon": "perk-images/Styles/Inspiration/FuturesMarket/FuturesMarket.png"
+    },
+    {
+      "id": 8316,
+      "name": "Pulverizador de Tropas",
+      "icon": "perk-images/Styles/Inspiration/MinionDematerializer/MinionDematerializer.png"
+    },
+    {
+      "id": 8345,
+      "name": "Entrega de Biscoitos",
+      "icon": "perk-images/Styles/Inspiration/BiscuitDelivery/BiscuitDelivery.png"
+    },
+    {
+      "id": 8347,
+      "name": "Perspicácia Cósmica",
+      "icon": "perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png"
+    },
+    {
+      "id": 8410,
+      "name": "Velocidade de Aproximação",
+      "icon": "perk-images/Styles/Resolve/ApproachVelocity/ApproachVelocity.png"
+    },
+    {
+      "id": 8352,
+      "name": "Tônico de Distorção no Tempo",
+      "icon": "perk-images/Styles/Inspiration/TimeWarpTonic/TimeWarpTonic.png"
+    },
+    {
+      "id": 8005,
+      "name": "Pressione o Ataque",
+      "icon": "perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png"
+    },
+    {
+      "id": 8008,
+      "name": "Ritmo Fatal",
+      "icon": "perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png"
+    },
+    {
+      "id": 8021,
+      "name": "Agilidade nos Pés",
+      "icon": "perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+    },
+    {
+      "id": 8010,
+      "name": "Conquistador",
+      "icon": "perk-images/Styles/Precision/Conqueror/Conqueror.png"
+    },
+    {
+      "id": 9101,
+      "name": "Cura Excessiva",
+      "icon": "perk-images/Styles/Precision/Overheal.png"
+    },
+    {
+      "id": 9111,
+      "name": "Triunfo",
+      "icon": "perk-images/Styles/Precision/Triumph.png"
+    },
+    {
+      "id": 8009,
+      "name": "Presença de Espírito",
+      "icon": "perk-images/Styles/Precision/PresenceOfMind/PresenceOfMind.png"
+    },
+    {
+      "id": 9104,
+      "name": "Lenda: Espontaneidade",
+      "icon": "perk-images/Styles/Precision/LegendAlacrity/LegendAlacrity.png"
+    },
+    {
+      "id": 9105,
+      "name": "Lenda: Tenacidade",
+      "icon": "perk-images/Styles/Precision/LegendTenacity/LegendTenacity.png"
+    },
+    {
+      "id": 9103,
+      "name": "Lenda: Linhagem",
+      "icon": "perk-images/Styles/Precision/LegendBloodline/LegendBloodline.png"
+    },
+    {
+      "id": 8014,
+      "name": "Golpe de Misericórdia",
+      "icon": "perk-images/Styles/Precision/CoupDeGrace/CoupDeGrace.png"
+    },
+    {
+      "id": 8017,
+      "name": "Dilacerar",
+      "icon": "perk-images/Styles/Precision/CutDown/CutDown.png"
+    },
+    {
+      "id": 8299,
+      "name": "Até a Morte",
+      "icon": "perk-images/Styles/Sorcery/LastStand/LastStand.png"
+    },
+    {
+      "id": 8437,
+      "name": "Aperto dos Mortos-Vivos",
+      "icon": "perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+    },
+    {
+      "id": 8439,
+      "name": "Pós-choque",
+      "icon": "perk-images/Styles/Resolve/VeteranAftershock/VeteranAftershock.png"
+    },
+    {
+      "id": 8465,
+      "name": "Guardião",
+      "icon": "perk-images/Styles/Resolve/Guardian/Guardian.png"
+    },
+    {
+      "id": 8446,
+      "name": "Demolir",
+      "icon": "perk-images/Styles/Resolve/Demolish/Demolish.png"
+    },
+    {
+      "id": 8463,
+      "name": "Fonte da Vida",
+      "icon": "perk-images/Styles/Resolve/FontOfLife/FontOfLife.png"
+    },
+    {
+      "id": 8401,
+      "name": "Golpe de Escudo",
+      "icon": "perk-images/Styles/Resolve/MirrorShell/MirrorShell.png"
+    },
+    {
+      "id": 8429,
+      "name": "Condicionamento",
+      "icon": "perk-images/Styles/Resolve/Conditioning/Conditioning.png"
+    },
+    {
+      "id": 8444,
+      "name": "Ventos Revigorantes",
+      "icon": "perk-images/Styles/Resolve/SecondWind/SecondWind.png"
+    },
+    {
+      "id": 8473,
+      "name": "Osso Revestido",
+      "icon": "perk-images/Styles/Resolve/BonePlating/BonePlating.png"
+    },
+    {
+      "id": 8451,
+      "name": "Crescimento Excessivo",
+      "icon": "perk-images/Styles/Resolve/Overgrowth/Overgrowth.png"
+    },
+    {
+      "id": 8453,
+      "name": "Revitalizar",
+      "icon": "perk-images/Styles/Resolve/Revitalize/Revitalize.png"
+    },
+    {
+      "id": 8242,
+      "name": "Inabalável",
+      "icon": "perk-images/Styles/Sorcery/Unflinching/Unflinching.png"
+    },
+    {
+      "id": 8214,
+      "name": "Invocar Aery",
+      "icon": "perk-images/Styles/Sorcery/SummonAery/SummonAery.png"
+    },
+    {
+      "id": 8229,
+      "name": "Cometa Arcano",
+      "icon": "perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+    },
+    {
+      "id": 8230,
+      "name": "Ímpeto Gradual",
+      "icon": "perk-images/Styles/Sorcery/PhaseRush/PhaseRush.png"
+    },
+    {
+      "id": 8224,
+      "name": "Orbe Anulador",
+      "icon": "perk-images/Styles/Sorcery/NullifyingOrb/Pokeshield.png"
+    },
+    {
+      "id": 8226,
+      "name": "Faixa de Fluxo de Mana",
+      "icon": "perk-images/Styles/Sorcery/ManaflowBand/ManaflowBand.png"
+    },
+    {
+      "id": 8275,
+      "name": "Manto de Nimbus",
+      "icon": "perk-images/Styles/Sorcery/NimbusCloak/6361.png"
+    },
+    {
+      "id": 8210,
+      "name": "Transcendência",
+      "icon": "perk-images/Styles/Sorcery/Transcendence/Transcendence.png"
+    },
+    {
+      "id": 8234,
+      "name": "Celeridade",
+      "icon": "perk-images/Styles/Sorcery/Celerity/CelerityTemp.png"
+    },
+    {
+      "id": 8233,
+      "name": "Foco Absoluto",
+      "icon": "perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png"
+    },
+    {
+      "id": 8237,
+      "name": "Chamuscar",
+      "icon": "perk-images/Styles/Sorcery/Scorch/Scorch.png"
+    },
+    {
+      "id": 8232,
+      "name": "Caminhar Sobre as Águas",
+      "icon": "perk-images/Styles/Sorcery/Waterwalking/Waterwalking.png"
+    },
+    {
+      "id": 8236,
+      "name": "Tempestade Crescente",
+      "icon": "perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png"
+    }
+  ]

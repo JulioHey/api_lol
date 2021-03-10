@@ -4,6 +4,7 @@ import {
 
 import champions from "../../champions.json";
 import summoner from "../../summoner.json";
+import runesReforged from "../../runesReforged.json";
 
 export class Test {
     tranformArrays() {
@@ -94,20 +95,34 @@ export class Test {
     }
 
     getChampionsIds() {
-        const {data} = summoner;
+        // const {data} = runesReforged;
         
         const response: Array<any> = [];
 
-        Object.values(data).map((element: any) => {
-            const champion = {
-                id: element.id,
-                key: element.key,
-                name: element.name,
-                description: element.description,
-                imagename: element.image.full
-            };
+        // Object.values(data).map((element: any) => {
+        //     const champion = {
+        //         id: element.id,
+        //         key: element.key,
+        //         name: element.name,
+        //         description: element.description,
+        //         imagename: element.image.full
+        //     };
 
-            response.push(champion);
+        //     response.push(champion);
+        // });
+
+        runesReforged.map((element: any) => {
+            element.slots.map((runesValue: any) => {
+                Object.values(runesValue).map((runes: any) => {
+                    runes.map((rune: any) => {
+                        response.push({
+                            id: rune.id,
+                            name: rune.name,
+                            icon: rune.icon
+                        });
+                    })
+                })
+            });
         });
 
         return response;

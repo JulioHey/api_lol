@@ -3,7 +3,8 @@
 /.env
 /data
 /response-example-lol.json
-/champions.json
 /response-example1.json
+/champions.json
 /summoner.json
+/runesReforged.json
 /src/images
