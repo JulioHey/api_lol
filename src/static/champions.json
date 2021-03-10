@@ -1,0 +1,772 @@
+[
+    {
+      "id": "Aatrox",
+      "key": "266",
+      "imagename": "Aatrox.png"
+    },
+    {
+      "id": "Ahri",
+      "key": "103",
+      "imagename": "Ahri.png"
+    },
+    {
+      "id": "Akali",
+      "key": "84",
+      "imagename": "Akali.png"
+    },
+    {
+      "id": "Alistar",
+      "key": "12",
+      "imagename": "Alistar.png"
+    },
+    {
+      "id": "Amumu",
+      "key": "32",
+      "imagename": "Amumu.png"
+    },
+    {
+      "id": "Anivia",
+      "key": "34",
+      "imagename": "Anivia.png"
+    },
+    {
+      "id": "Annie",
+      "key": "1",
+      "imagename": "Annie.png"
+    },
+    {
+      "id": "Aphelios",
+      "key": "523",
+      "imagename": "Aphelios.png"
+    },
+    {
+      "id": "Ashe",
+      "key": "22",
+      "imagename": "Ashe.png"
+    },
+    {
+      "id": "AurelionSol",
+      "key": "136",
+      "imagename": "AurelionSol.png"
+    },
+    {
+      "id": "Azir",
+      "key": "268",
+      "imagename": "Azir.png"
+    },
+    {
+      "id": "Bard",
+      "key": "432",
+      "imagename": "Bard.png"
+    },
+    {
+      "id": "Blitzcrank",
+      "key": "53",
+      "imagename": "Blitzcrank.png"
+    },
+    {
+      "id": "Brand",
+      "key": "63",
+      "imagename": "Brand.png"
+    },
+    {
+      "id": "Braum",
+      "key": "201",
+      "imagename": "Braum.png"
+    },
+    {
+      "id": "Caitlyn",
+      "key": "51",
+      "imagename": "Caitlyn.png"
+    },
+    {
+      "id": "Camille",
+      "key": "164",
+      "imagename": "Camille.png"
+    },
+    {
+      "id": "Cassiopeia",
+      "key": "69",
+      "imagename": "Cassiopeia.png"
+    },
+    {
+      "id": "Chogath",
+      "key": "31",
+      "imagename": "Chogath.png"
+    },
+    {
+      "id": "Corki",
+      "key": "42",
+      "imagename": "Corki.png"
+    },
+    {
+      "id": "Darius",
+      "key": "122",
+      "imagename": "Darius.png"
+    },
+    {
+      "id": "Diana",
+      "key": "131",
+      "imagename": "Diana.png"
+    },
+    {
+      "id": "Draven",
+      "key": "119",
+      "imagename": "Draven.png"
+    },
+    {
+      "id": "DrMundo",
+      "key": "36",
+      "imagename": "DrMundo.png"
+    },
+    {
+      "id": "Ekko",
+      "key": "245",
+      "imagename": "Ekko.png"
+    },
+    {
+      "id": "Elise",
+      "key": "60",
+      "imagename": "Elise.png"
+    },
+    {
+      "id": "Evelynn",
+      "key": "28",
+      "imagename": "Evelynn.png"
+    },
+    {
+      "id": "Ezreal",
+      "key": "81",
+      "imagename": "Ezreal.png"
+    },
+    {
+      "id": "Fiddlesticks",
+      "key": "9",
+      "imagename": "Fiddlesticks.png"
+    },
+    {
+      "id": "Fiora",
+      "key": "114",
+      "imagename": "Fiora.png"
+    },
+    {
+      "id": "Fizz",
+      "key": "105",
+      "imagename": "Fizz.png"
+    },
+    {
+      "id": "Galio",
+      "key": "3",
+      "imagename": "Galio.png"
+    },
+    {
+      "id": "Gangplank",
+      "key": "41",
+      "imagename": "Gangplank.png"
+    },
+    {
+      "id": "Garen",
+      "key": "86",
+      "imagename": "Garen.png"
+    },
+    {
+      "id": "Gnar",
+      "key": "150",
+      "imagename": "Gnar.png"
+    },
+    {
+      "id": "Gragas",
+      "key": "79",
+      "imagename": "Gragas.png"
+    },
+    {
+      "id": "Graves",
+      "key": "104",
+      "imagename": "Graves.png"
+    },
+    {
+      "id": "Hecarim",
+      "key": "120",
+      "imagename": "Hecarim.png"
+    },
+    {
+      "id": "Heimerdinger",
+      "key": "74",
+      "imagename": "Heimerdinger.png"
+    },
+    {
+      "id": "Illaoi",
+      "key": "420",
+      "imagename": "Illaoi.png"
+    },
+    {
+      "id": "Irelia",
+      "key": "39",
+      "imagename": "Irelia.png"
+    },
+    {
+      "id": "Ivern",
+      "key": "427",
+      "imagename": "Ivern.png"
+    },
+    {
+      "id": "Janna",
+      "key": "40",
+      "imagename": "Janna.png"
+    },
+    {
+      "id": "JarvanIV",
+      "key": "59",
+      "imagename": "JarvanIV.png"
+    },
+    {
+      "id": "Jax",
+      "key": "24",
+      "imagename": "Jax.png"
+    },
+    {
+      "id": "Jayce",
+      "key": "126",
+      "imagename": "Jayce.png"
+    },
+    {
+      "id": "Jhin",
+      "key": "202",
+      "imagename": "Jhin.png"
+    },
+    {
+      "id": "Jinx",
+      "key": "222",
+      "imagename": "Jinx.png"
+    },
+    {
+      "id": "Kaisa",
+      "key": "145",
+      "imagename": "Kaisa.png"
+    },
+    {
+      "id": "Kalista",
+      "key": "429",
+      "imagename": "Kalista.png"
+    },
+    {
+      "id": "Karma",
+      "key": "43",
+      "imagename": "Karma.png"
+    },
+    {
+      "id": "Karthus",
+      "key": "30",
+      "imagename": "Karthus.png"
+    },
+    {
+      "id": "Kassadin",
+      "key": "38",
+      "imagename": "Kassadin.png"
+    },
+    {
+      "id": "Katarina",
+      "key": "55",
+      "imagename": "Katarina.png"
+    },
+    {
+      "id": "Kayle",
+      "key": "10",
+      "imagename": "Kayle.png"
+    },
+    {
+      "id": "Kayn",
+      "key": "141",
+      "imagename": "Kayn.png"
+    },
+    {
+      "id": "Kennen",
+      "key": "85",
+      "imagename": "Kennen.png"
+    },
+    {
+      "id": "Khazix",
+      "key": "121",
+      "imagename": "Khazix.png"
+    },
+    {
+      "id": "Kindred",
+      "key": "203",
+      "imagename": "Kindred.png"
+    },
+    {
+      "id": "Kled",
+      "key": "240",
+      "imagename": "Kled.png"
+    },
+    {
+      "id": "KogMaw",
+      "key": "96",
+      "imagename": "KogMaw.png"
+    },
+    {
+      "id": "Leblanc",
+      "key": "7",
+      "imagename": "Leblanc.png"
+    },
+    {
+      "id": "LeeSin",
+      "key": "64",
+      "imagename": "LeeSin.png"
+    },
+    {
+      "id": "Leona",
+      "key": "89",
+      "imagename": "Leona.png"
+    },
+    {
+      "id": "Lillia",
+      "key": "876",
+      "imagename": "Lillia.png"
+    },
+    {
+      "id": "Lissandra",
+      "key": "127",
+      "imagename": "Lissandra.png"
+    },
+    {
+      "id": "Lucian",
+      "key": "236",
+      "imagename": "Lucian.png"
+    },
+    {
+      "id": "Lulu",
+      "key": "117",
+      "imagename": "Lulu.png"
+    },
+    {
+      "id": "Lux",
+      "key": "99",
+      "imagename": "Lux.png"
+    },
+    {
+      "id": "Malphite",
+      "key": "54",
+      "imagename": "Malphite.png"
+    },
+    {
+      "id": "Malzahar",
+      "key": "90",
+      "imagename": "Malzahar.png"
+    },
+    {
+      "id": "Maokai",
+      "key": "57",
+      "imagename": "Maokai.png"
+    },
+    {
+      "id": "MasterYi",
+      "key": "11",
+      "imagename": "MasterYi.png"
+    },
+    {
+      "id": "MissFortune",
+      "key": "21",
+      "imagename": "MissFortune.png"
+    },
+    {
+      "id": "MonkeyKing",
+      "key": "62",
+      "imagename": "MonkeyKing.png"
+    },
+    {
+      "id": "Mordekaiser",
+      "key": "82",
+      "imagename": "Mordekaiser.png"
+    },
+    {
+      "id": "Morgana",
+      "key": "25",
+      "imagename": "Morgana.png"
+    },
+    {
+      "id": "Nami",
+      "key": "267",
+      "imagename": "Nami.png"
+    },
+    {
+      "id": "Nasus",
+      "key": "75",
+      "imagename": "Nasus.png"
+    },
+    {
+      "id": "Nautilus",
+      "key": "111",
+      "imagename": "Nautilus.png"
+    },
+    {
+      "id": "Neeko",
+      "key": "518",
+      "imagename": "Neeko.png"
+    },
+    {
+      "id": "Nidalee",
+      "key": "76",
+      "imagename": "Nidalee.png"
+    },
+    {
+      "id": "Nocturne",
+      "key": "56",
+      "imagename": "Nocturne.png"
+    },
+    {
+      "id": "Nunu",
+      "key": "20",
+      "imagename": "Nunu.png"
+    },
+    {
+      "id": "Olaf",
+      "key": "2",
+      "imagename": "Olaf.png"
+    },
+    {
+      "id": "Orianna",
+      "key": "61",
+      "imagename": "Orianna.png"
+    },
+    {
+      "id": "Ornn",
+      "key": "516",
+      "imagename": "Ornn.png"
+    },
+    {
+      "id": "Pantheon",
+      "key": "80",
+      "imagename": "Pantheon.png"
+    },
+    {
+      "id": "Poppy",
+      "key": "78",
+      "imagename": "Poppy.png"
+    },
+    {
+      "id": "Pyke",
+      "key": "555",
+      "imagename": "Pyke.png"
+    },
+    {
+      "id": "Qiyana",
+      "key": "246",
+      "imagename": "Qiyana.png"
+    },
+    {
+      "id": "Quinn",
+      "key": "133",
+      "imagename": "Quinn.png"
+    },
+    {
+      "id": "Rakan",
+      "key": "497",
+      "imagename": "Rakan.png"
+    },
+    {
+      "id": "Rammus",
+      "key": "33",
+      "imagename": "Rammus.png"
+    },
+    {
+      "id": "RekSai",
+      "key": "421",
+      "imagename": "RekSai.png"
+    },
+    {
+      "id": "Rell",
+      "key": "526",
+      "imagename": "Rell.png"
+    },
+    {
+      "id": "Renekton",
+      "key": "58",
+      "imagename": "Renekton.png"
+    },
+    {
+      "id": "Rengar",
+      "key": "107",
+      "imagename": "Rengar.png"
+    },
+    {
+      "id": "Riven",
+      "key": "92",
+      "imagename": "Riven.png"
+    },
+    {
+      "id": "Rumble",
+      "key": "68",
+      "imagename": "Rumble.png"
+    },
+    {
+      "id": "Ryze",
+      "key": "13",
+      "imagename": "Ryze.png"
+    },
+    {
+      "id": "Samira",
+      "key": "360",
+      "imagename": "Samira.png"
+    },
+    {
+      "id": "Sejuani",
+      "key": "113",
+      "imagename": "Sejuani.png"
+    },
+    {
+      "id": "Senna",
+      "key": "235",
+      "imagename": "Senna.png"
+    },
+    {
+      "id": "Seraphine",
+      "key": "147",
+      "imagename": "Seraphine.png"
+    },
+    {
+      "id": "Sett",
+      "key": "875",
+      "imagename": "Sett.png"
+    },
+    {
+      "id": "Shaco",
+      "key": "35",
+      "imagename": "Shaco.png"
+    },
+    {
+      "id": "Shen",
+      "key": "98",
+      "imagename": "Shen.png"
+    },
+    {
+      "id": "Shyvana",
+      "key": "102",
+      "imagename": "Shyvana.png"
+    },
+    {
+      "id": "Singed",
+      "key": "27",
+      "imagename": "Singed.png"
+    },
+    {
+      "id": "Sion",
+      "key": "14",
+      "imagename": "Sion.png"
+    },
+    {
+      "id": "Sivir",
+      "key": "15",
+      "imagename": "Sivir.png"
+    },
+    {
+      "id": "Skarner",
+      "key": "72",
+      "imagename": "Skarner.png"
+    },
+    {
+      "id": "Sona",
+      "key": "37",
+      "imagename": "Sona.png"
+    },
+    {
+      "id": "Soraka",
+      "key": "16",
+      "imagename": "Soraka.png"
+    },
+    {
+      "id": "Swain",
+      "key": "50",
+      "imagename": "Swain.png"
+    },
+    {
+      "id": "Sylas",
+      "key": "517",
+      "imagename": "Sylas.png"
+    },
+    {
+      "id": "Syndra",
+      "key": "134",
+      "imagename": "Syndra.png"
+    },
+    {
+      "id": "TahmKench",
+      "key": "223",
+      "imagename": "TahmKench.png"
+    },
+    {
+      "id": "Taliyah",
+      "key": "163",
+      "imagename": "Taliyah.png"
+    },
+    {
+      "id": "Talon",
+      "key": "91",
+      "imagename": "Talon.png"
+    },
+    {
+      "id": "Taric",
+      "key": "44",
+      "imagename": "Taric.png"
+    },
+    {
+      "id": "Teemo",
+      "key": "17",
+      "imagename": "Teemo.png"
+    },
+    {
+      "id": "Thresh",
+      "key": "412",
+      "imagename": "Thresh.png"
+    },
+    {
+      "id": "Tristana",
+      "key": "18",
+      "imagename": "Tristana.png"
+    },
+    {
+      "id": "Trundle",
+      "key": "48",
+      "imagename": "Trundle.png"
+    },
+    {
+      "id": "Tryndamere",
+      "key": "23",
+      "imagename": "Tryndamere.png"
+    },
+    {
+      "id": "TwistedFate",
+      "key": "4",
+      "imagename": "TwistedFate.png"
+    },
+    {
+      "id": "Twitch",
+      "key": "29",
+      "imagename": "Twitch.png"
+    },
+    {
+      "id": "Udyr",
+      "key": "77",
+      "imagename": "Udyr.png"
+    },
+    {
+      "id": "Urgot",
+      "key": "6",
+      "imagename": "Urgot.png"
+    },
+    {
+      "id": "Varus",
+      "key": "110",
+      "imagename": "Varus.png"
+    },
+    {
+      "id": "Vayne",
+      "key": "67",
+      "imagename": "Vayne.png"
+    },
+    {
+      "id": "Veigar",
+      "key": "45",
+      "imagename": "Veigar.png"
+    },
+    {
+      "id": "Velkoz",
+      "key": "161",
+      "imagename": "Velkoz.png"
+    },
+    {
+      "id": "Vi",
+      "key": "254",
+      "imagename": "Vi.png"
+    },
+    {
+      "id": "Viego",
+      "key": "234",
+      "imagename": "Viego.png"
+    },
+    {
+      "id": "Viktor",
+      "key": "112",
+      "imagename": "Viktor.png"
+    },
+    {
+      "id": "Vladimir",
+      "key": "8",
+      "imagename": "Vladimir.png"
+    },
+    {
+      "id": "Volibear",
+      "key": "106",
+      "imagename": "Volibear.png"
+    },
+    {
+      "id": "Warwick",
+      "key": "19",
+      "imagename": "Warwick.png"
+    },
+    {
+      "id": "Xayah",
+      "key": "498",
+      "imagename": "Xayah.png"
+    },
+    {
+      "id": "Xerath",
+      "key": "101",
+      "imagename": "Xerath.png"
+    },
+    {
+      "id": "XinZhao",
+      "key": "5",
+      "imagename": "XinZhao.png"
+    },
+    {
+      "id": "Yasuo",
+      "key": "157",
+      "imagename": "Yasuo.png"
+    },
+    {
+      "id": "Yone",
+      "key": "777",
+      "imagename": "Yone.png"
+    },
+    {
+      "id": "Yorick",
+      "key": "83",
+      "imagename": "Yorick.png"
+    },
+    {
+      "id": "Yuumi",
+      "key": "350",
+      "imagename": "Yuumi.png"
+    },
+    {
+      "id": "Zac",
+      "key": "154",
+      "imagename": "Zac.png"
+    },
+    {
+      "id": "Zed",
+      "key": "238",
+      "imagename": "Zed.png"
+    },
+    {
+      "id": "Ziggs",
+      "key": "115",
+      "imagename": "Ziggs.png"
+    },
+    {
+      "id": "Zilean",
+      "key": "26",
+      "imagename": "Zilean.png"
+    },
+    {
+      "id": "Zoe",
+      "key": "142",
+      "imagename": "Zoe.png"
+    },
+    {
+      "id": "Zyra",
+      "key": "143",
+      "imagename": "Zyra.png"
+    }
+  ]

@@ -2,7 +2,8 @@ import {
     APIARRAY
 } from "./achivements_array";
 
-// import a from "./achievmentsOrdered.json";
+import champions from "../../champions.json";
+import summoner from "../../summoner.json";
 
 export class Test {
     tranformArrays() {
@@ -90,5 +91,25 @@ export class Test {
         // console.log(founds);
 
         // console.log(a)
+    }
+
+    getChampionsIds() {
+        const {data} = summoner;
+        
+        const response: Array<any> = [];
+
+        Object.values(data).map((element: any) => {
+            const champion = {
+                id: element.id,
+                key: element.key,
+                name: element.name,
+                description: element.description,
+                imagename: element.image.full
+            };
+
+            response.push(champion);
+        });
+
+        return response;
     }
 }

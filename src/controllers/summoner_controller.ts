@@ -13,14 +13,20 @@ import {
     LiveClient
 } from '../services/live_client_lol';
 
+import {
+    Test
+} from '../services/test';
+
 
 export class SummonerController {
     getSummoner: getSummoner;
     LiveClient: LiveClient;
+    Test: Test;
 
     constructor(apiKey: string, axios: AxiosStatic) {
         this.getSummoner = new getSummoner(apiKey, axios);
         this.LiveClient = new LiveClient(axios);
+        this.Test = new Test();
     }
 
     basicInfo = async (request: Request, response: Response) => {
@@ -81,12 +87,23 @@ export class SummonerController {
         }
     }
 
-
     valorantMatch = async (request: Request, response: Response) => {
         try {
             const { userName } = request.body;
 
             const userInfo = await this.getSummoner.getValMatchHistory(userName);
+            
+            return response.send(userInfo);
+        } catch (error) {
+            return response.json(error);
+        }
+    }
+
+    teste = async (request: Request, response: Response) => {
+        try {
+            const { userName, server, startMatch, finalMatch } = request.body;
+
+            const userInfo = await this.Test.getChampionsIds();
             
             return response.send(userInfo);
         } catch (error) {

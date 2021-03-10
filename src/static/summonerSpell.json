@@ -1,0 +1,100 @@
+[
+    {
+      "id": "SummonerBarrier",
+      "key": "21",
+      "name": "Barreira",
+      "description": "Protege seu Campeão contra 115 - 455 de dano (dependendo do nível do Campeão) por 2s.",
+      "imagename": "SummonerBarrier.png"
+    },
+    {
+      "id": "SummonerBoost",
+      "key": "1",
+      "name": "Purificar",
+      "description": "Remove todos os desarmes (menos supressão e arremessos ao ar) e efeitos negativos de Feitiços de Invocador que afetam seu Campeão, além de reduzir a duração de outros desarmes em 65% por 3s.",
+      "imagename": "SummonerBoost.png"
+    },
+    {
+      "id": "SummonerDot",
+      "key": "14",
+      "name": "Incendiar",
+      "description": "Incendeia o Campeão-alvo inimigo, causando 70 - 410 de Dano Verdadeiro (dependendo do nível do Campeão) ao longo de 5s, concedendo visão do alvo e reduzindo os efeitos de cura dele enquanto durar o efeito.",
+      "imagename": "SummonerDot.png"
+    },
+    {
+      "id": "SummonerExhaust",
+      "key": "3",
+      "name": "Exaustão",
+      "description": "Exaure o Campeão-alvo inimigo, reduzindo sua Velocidade de Movimento em 30% e seu dano causado em 40% por 3s.",
+      "imagename": "SummonerExhaust.png"
+    },
+    {
+      "id": "SummonerFlash",
+      "key": "4",
+      "name": "Flash",
+      "description": "Teleporta seu Campeão por uma curta distância em direção ao seu cursor.",
+      "imagename": "SummonerFlash.png"
+    },
+    {
+      "id": "SummonerHaste",
+      "key": "6",
+      "name": "Fantasma",
+      "description": "Seu Campeão ignora colisão com unidades e recebe 24% - 48% de Velocidade de Movimento adicional por 10s (dependendo do nível do Campeão). Fantasma tem sua duração estendida com eliminações.",
+      "imagename": "SummonerHaste.png"
+    },
+    {
+      "id": "SummonerHeal",
+      "key": "7",
+      "name": "Curar",
+      "description": "Cura 90 - 345 de Vida (dependendo do nível do Campeão) e concede 30% de Velocidade de Movimento por 1s a você e ao Campeão-alvo aliado. Essa cura é reduzida pela metade para unidades recentemente afetadas por outro Curar como Feitiço de Invocador.",
+      "imagename": "SummonerHeal.png"
+    },
+    {
+      "id": "SummonerMana",
+      "key": "13",
+      "name": "Clareza",
+      "description": "Restaura 50% da Mana máxima do seu Campeão. Também restaura 25% da Mana máxima de aliados.",
+      "imagename": "SummonerMana.png"
+    },
+    {
+      "id": "SummonerPoroRecall",
+      "key": "30",
+      "name": "Ao Rei!",
+      "description": "Faz rapidamente o trajeto em direção ao Rei Poro.",
+      "imagename": "SummonerPoroRecall.png"
+    },
+    {
+      "id": "SummonerPoroThrow",
+      "key": "31",
+      "name": "Arremesso de Poro",
+      "description": "Arremessa um Poro em seus inimigos. Caso atinja alguém, você pode deslocar-se rapidamente até seu alvo na sequência.",
+      "imagename": "SummonerPoroThrow.png"
+    },
+    {
+      "id": "SummonerSmite",
+      "key": "11",
+      "name": "Golpear",
+      "description": "Causa 390 - 1000 de Dano Verdadeiro (dependendo do nível do Campeão) a um monstro épico, grande, médio ou tropa inimiga. Restaura Vida com base na sua Vida máxima ao usar contra monstros.",
+      "imagename": "SummonerSmite.png"
+    },
+    {
+      "id": "SummonerSnowURFSnowball_Mark",
+      "key": "39",
+      "name": "Marca",
+      "description": "Arremessa uma bola de neve em linha reta. Se atingir um inimigo, ele fica marcado, sendo revelado por Visão Mágica, e seu Campeão pode se deslocar rapidamente na direção dele logo em seguida.",
+      "imagename": "SummonerSnowURFSnowball_Mark.png"
+    },
+    {
+      "id": "SummonerSnowball",
+      "key": "32",
+      "name": "Marca",
+      "description": "Arremessa uma bola de neve em linha reta. Se atingir um inimigo, ele fica marcado, sendo revelado por Visão Mágica, e seu Campeão pode se deslocar rapidamente na direção dele logo em seguida.",
+      "imagename": "SummonerSnowball.png"
+    },
+    {
+      "id": "SummonerTeleport",
+      "key": "12",
+      "name": "Teleporte",
+      "description": "Depois de canalizar por 4s, teleporta seu Campeão para a estrutura, tropa ou sentinela-alvo aliada e concede um surto de Velocidade de Movimento. O Tempo de Recarga de Teleporte escala 420s - 240s dependendo do nível do Campeão.",
+      "imagename": "SummonerTeleport.png"
+    }
+  ]

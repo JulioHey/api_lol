@@ -180,6 +180,7 @@ export class LOLHistoryService {
 
             baseParticipantsArray[index].kda = this.contructKDA(element.stats);
             baseParticipantsArray[index].items = this.constructItemsData(element.stats);
+            baseParticipantsArray[index].runes = this.contructRuneData(element.stats);
 
             if (side === "blue") {
                 teamArray[0].totalDamageDealt += element.stats.totalDamageDealtToChampions;
@@ -207,6 +208,7 @@ export class LOLHistoryService {
     
                 baseParticipantsArray[index].kda = this.contructKDA(element.stats);
                 baseParticipantsArray[index].items = this.constructItemsData(element.stats);
+                baseParticipantsArray[index].runes = this.contructRuneData(element.stats);
             }
             baseParticipantsArray[index].champion = element.championId;
 
@@ -270,5 +272,16 @@ export class LOLHistoryService {
             ],
             totalDamageDealt: 0
         }]
+    }
+
+    contructRuneData(data:any) {
+        return {
+            perk0: data.perk0,
+            perk1: data.perk1,
+            perk2: data.perk2,
+            perk3: data.perk3,
+            perk4: data.perk4,
+            perk5: data.perk5,
+        }
     }
 }

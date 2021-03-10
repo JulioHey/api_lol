@@ -1,7 +1,9 @@
 /node_modules
 /ach.txt
 /.env
-
+/data
 /response-example-lol.json
-
+/champions.json
 /response-example1.json
+/summoner.json
+/src/images

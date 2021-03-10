@@ -28,13 +28,16 @@ const summonerController = new SummonerController(RiotApiKey, axios);
 const steamController = new SteamController(axios, SteamApiKey, achievments);
 
 router.get("/val/test", summonerController.valorantMatch);
+
 router.get("/lol/info", summonerController.basicInfo);
 router.get("/lol/authenticate", summonerController.authenticate);
 router.get("/lol/match", summonerController.history);
 router.get("/lol/basicHistory", summonerController.basicHistory);
 router.get("/lol/status", summonerController.basicStatus);
+
 router.get("/csgo/steamId", steamController.getStats);
 router.get("/csgo/weapons", steamController.getWeaponStats);
-// router.get("/teste", getSummonerController.teste);
+
+router.get("/teste", summonerController.teste);
 
 export default router;
