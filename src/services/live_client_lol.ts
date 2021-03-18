@@ -2,6 +2,8 @@ import { AxiosStatic } from 'axios';
 import {Agent} from "https";
 
 
+// Need a lot of stuff
+// It just has a authentication that just works when user is with a match open in the computer
 export class LiveClient {
     api: AxiosStatic;
     url: string;

@@ -1,4 +1,4 @@
-export class LOLHistoryService {
+export class RiothandleDataService {
     encodeSummonerName(summoner: string) {
         const ç = /ç/ig;
         const space = / /ig;
