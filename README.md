@@ -7,5 +7,8 @@
   - I'm current working on a project that will use that api, so i didn't implemented reusability in all classes yet;
   - Todo:
     - [] Decodify strings in the method to find by User, in both RiotApi and SteamApi;
+    - [] Get prepare the classes for all methods in RiotApi;
+    - [] Prepare all classes for reusability;
+    - [] Create Valorant methods;
 
   * For you to use the classes you will need to get your own ApiKeys, and give it a AxiosStatic class to it get the info you need;
