@@ -99,11 +99,23 @@ export class SummonerController {
         }
     }
 
-    teste = async (request: Request, response: Response) => {
+    championsMastery = async (request: Request, response: Response) => {
         try {
-            const { userName, server, startMatch, finalMatch } = request.body;
+            const { summonerId, server} = request.body;
 
-            const userInfo = await this.Test.getChampionsIds();
+            const userInfo = await this.getSummoner.getChampionsMasteryWithUserID(summonerId, server);
+            
+            return response.send(userInfo);
+        } catch (error) {
+            return response.json(error);
+        }
+    }
+
+    championWinRate = async (request: Request, response: Response) => {
+        try {
+            const { championId, accountId, server} = request.body;
+
+            const userInfo = await this.getSummoner.getChampionWinRate(championId, accountId, server);
             
             return response.send(userInfo);
         } catch (error) {

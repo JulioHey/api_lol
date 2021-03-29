@@ -34,10 +34,11 @@ router.get("/lol/authenticate", summonerController.authenticate);
 router.get("/lol/match", summonerController.history);
 router.get("/lol/basicHistory", summonerController.basicHistory);
 router.get("/lol/status", summonerController.basicStatus);
+router.get("/lol/mastery", summonerController.championsMastery);
+router.get("/lol/champion-win-rate", summonerController.championWinRate);
 
 router.get("/csgo/steamId", steamController.getStats);
 router.get("/csgo/weapons", steamController.getWeaponStats);
 
-router.get("/teste", summonerController.teste);
 
 export default router;

@@ -2,14 +2,6 @@ import {
     AxiosStatic
 } from 'axios';
 
-interface WeaponStaticProps {
-    kills:number
-    hits:number | null
-    shots:number | null
-    type: string
-    accuracy:number | null
-}
-
 
 export class SteamAPI {
     api: AxiosStatic;

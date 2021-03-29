@@ -79,6 +79,11 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
+"@types/utf8@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@types/utf8/-/utf8-2.1.6.tgz#430cabb71a42d0a3613cce5621324fe4f5a25753"
+  integrity sha512-pRs2gYF5yoKYrgSaira0DJqVg2tFuF+Qjp838xS7K+mJyY2jJzjsrl6y17GbIa4uMRogMbxs+ghNCvKg6XyNrA==
+
 accepts@~1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
@@ -1198,10 +1203,12 @@ steam-crypto@^0.0:
   resolved "https://registry.yarnpkg.com/steam-crypto/-/steam-crypto-0.0.1.tgz#0477b182a2b1fdd941893dbcc22e0e93b14abb7f"
   integrity sha1-BHexgqKx/dlBiT28wi4Ok7FKu38=
 
-steam-resources@^1.0.0:
+steam-resources@^1.0.0, "steam-resources@https://github.com/seishun/node-steam-resources.git#v1.0.0":
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/steam-resources/-/steam-resources-1.0.0.tgz#5be100867b44fdc884a578f44f6b6edc116b56ee"
-  integrity sha1-W+EAhntE/ciEpXj0T2tu3BFrVu4=
+  resolved "https://github.com/seishun/node-steam-resources.git#1403939a12ba467a4b82c8ccbc279bbcdad43588"
+  dependencies:
+    bytebuffer "^5.0"
+    protobufjs "^4.1"
 
 "steam-resources@github:seishun/node-steam-resources":
   version "1.2.2"
@@ -1217,13 +1224,6 @@ steam-resources@^1.0.0:
   dependencies:
     bytebuffer "^5.0"
     csv-parse "^4.0.1"
-    protobufjs "^4.1"
-
-"steam-resources@https://github.com/seishun/node-steam-resources.git#v1.0.0":
-  version "1.0.0"
-  resolved "https://github.com/seishun/node-steam-resources.git#1403939a12ba467a4b82c8ccbc279bbcdad43588"
-  dependencies:
-    bytebuffer "^5.0"
     protobufjs "^4.1"
 
 steam@^1.4.0, steam@^1.4.1:
@@ -1373,6 +1373,11 @@ unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
+
+utf8@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/utf8/-/utf8-3.0.0.tgz#f052eed1364d696e769ef058b183df88c87f69d1"
+  integrity sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==
 
 utils-merge@1.0.1:
   version "1.0.1"

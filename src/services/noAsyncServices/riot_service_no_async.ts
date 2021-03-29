@@ -20,6 +20,7 @@ export class LOLHistoryService {
     handlePlayerData(data: any) {
         const tier = this.translateTier(data.tier);
         const {
+            summonerId,
             rank,
             leaguePoints,
             wins,
@@ -31,6 +32,7 @@ export class LOLHistoryService {
         const winRatio = wins / matches;
 
         return {
+            summonerId,
             tier,
             rank,
             leaguePoints,
@@ -282,6 +284,32 @@ export class LOLHistoryService {
             perk3: data.perk3,
             perk4: data.perk4,
             perk5: data.perk5,
+        }
+    }
+
+    getIfMathcIsWin(teams: Array<any>, participantIdentities: Array<any>, summonerName: String) {
+        var playerParticipationId: number = -1;
+
+        participantIdentities.map((element) => {
+            if (element.player.summonerName == summonerName) {
+                playerParticipationId = element.participantId;
+            }
+        });
+
+        if (playerParticipationId > 5) {
+            return this.transformWinStringToBoolean(teams[1].win)
+        } else {
+            return this.transformWinStringToBoolean(teams[0].win)
+        }
+
+    }
+
+    transformWinStringToBoolean(winString: string) {
+        if (winString == 'Fail') {
+            return false;
+        }
+        if (winString == 'Win') {
+            return true;
         }
     }
 }

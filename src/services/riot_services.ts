@@ -119,4 +119,61 @@ export class getSummoner {
         return response.data; 
     }
 
+    async getChampionsMasteryWithUserID(id: string, server: string = 'br1') {
+        const finalURL = `lol/champion-mastery/v4/champion-masteries/by-summoner/${id}?api_key=${this.apiKey}`;
+
+        this.url = this.historyService.createUrl(finalURL, server);
+
+        const response = await this.api.get(this.url);
+
+        return response.data;
+    }
+
+    async getIfMatchIsWin(gameId: string, summonerName: string, server: string = 'br1') {
+        const matchData = await this.getMatchInfoByGameId(gameId, server);
+
+        const {
+            teams,
+            participantIdentities
+        } = matchData;
+
+        return (this.historyService.getIfMathcIsWin(teams, participantIdentities, summonerName));
+    }
+
+    async getChampionWinRate(championId: number, accountId: string,summonerName: string , server: string='br1') {
+        const matchesArray = await this.getPlayerGameWithChampion(championId, accountId, server);
+
+        return await this.loopOfGamesIds(matchesArray, summonerName);
+        // return this.getPlayerGameWithChampion(championId, accountId, server);
+    }
+
+    async getPlayerGameWithChampion(championId: number, accountId: string, server: string='br1') {
+        const finalURL = `lol/match/v4/matchlists/by-account/${accountId}?champion=${championId}&api_key=${this.apiKey}`
+
+        this.url = this.historyService.createUrl(finalURL, server);
+
+        const response = await this.api.get(this.url);
+
+        return response.data.matches;
+    }
+
+    async loopOfGamesIds(matchesArray: Array<any>, summonerName: string) {
+        const numberOfMatches = matchesArray.length;
+
+        var numberOfWins = 0;
+
+        const promise = matchesArray.map(async (match) => {
+            // if (await this.getIfMatchIsWin(match.gameId, summonerName)) {
+            // }
+            const isWin = await this.getIfMatchIsWin(match.gameId, summonerName);
+            if (isWin) {
+                numberOfWins += 1;
+            }
+        });
+
+        await Promise.all(promise);
+
+        return {numberOfWins, numberOfMatches};
+    }
+
 }
