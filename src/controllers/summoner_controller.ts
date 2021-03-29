@@ -42,9 +42,9 @@ export class SummonerController {
 
     basicStatus = async (request: Request, response: Response) => {
         try {
-            const { name } = request.body;
+            const { userName } = request.body;
 
-            const userInfo = await this.getSummoner.getStatus(name);
+            const userInfo = await this.getSummoner.getStatus(userName);
             return response.send(userInfo);
         } catch (error) {
             return response.json(error);
